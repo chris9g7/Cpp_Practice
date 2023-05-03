@@ -7,7 +7,7 @@ int main()
     printf("Enter the number x\n");
     scanf("%d", &x);
 
-    for (int i = 2; i < x; i++)
+    for (int i = 2; i < x/2; i++)
     {
         if (x % i == 0)
         {
