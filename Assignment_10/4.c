@@ -7,6 +7,7 @@ int main()
     printf("Enter a number x\n");
     scanf("%d", &x);
     showNatural(x);
+    
     return 0;
 }
 

@@ -16,5 +16,14 @@ int main()
     }
     (cpy == arm) ? printf("Armstrong numebr") : printf("Not an Armstrong number");
 
+    /* we can this logic as well
+    store = f * f * f + s * s * s + t * t * t;
+
+    if (p == store)
+        printf("arm num");
+    
+    else
+        printf("not arm");*/
+
     return 0;
 }

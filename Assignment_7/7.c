@@ -2,9 +2,12 @@
 
 int main()
 {
-    int n, i, flag;
+    int n, i, x, y, flag;
 
-    for (n = 1; n <= 100; n++)
+    printf("Enter the ranges between x and y\n");
+    scanf("%d%d", &x, &y);
+
+    for (n = x; n <= y; n++)
     {
         flag = 0;
 

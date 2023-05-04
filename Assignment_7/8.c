@@ -2,9 +2,12 @@
 
 int main()
 {
-    int n, i, flag;
+    int n, i, x, flag;
 
-    for (n = 1; n <= 100; n++)
+    printf("Enter a number x \n");
+    scanf("%d", &x);
+
+    for (n = x; 1; n++)
     {
         flag = 0;
 
@@ -15,7 +18,10 @@ int main()
         }
 
         if (flag == 0)
+        {
             printf("%d\n", n);
+            break;
+        }
     }
 
     return 0;
