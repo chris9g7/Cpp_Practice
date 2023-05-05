@@ -15,10 +15,16 @@ void primeFactor(int num)
 {
     for (int i = 2; num != 1; i++)
     {
-        while (num % i == 0)
+        for (int j = i; num % i == 0;) //* use loop as well
         {
-            num = num / i;
-            printf("%d\n", i);
+            num = num / j;
+            printf("%d\n", j);
         }
     }
 }
+
+//  while (num % i == 0)
+//         {
+//             num = num / i;
+//             printf("%d\n", i);
+//         }
