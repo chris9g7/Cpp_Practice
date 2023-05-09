@@ -10,7 +10,7 @@ int main()
      
         for (j = 1; j <= 10; j++)
         {
-            if ((7 - i <= j) && (j <= 4 + i))
+            if ((7-i <= j) && (j <= 4+i))
                 printf(" ");
 
             else
@@ -18,6 +18,7 @@ int main()
         }
         printf("\n");
     }
+
 
 
 return 0;}

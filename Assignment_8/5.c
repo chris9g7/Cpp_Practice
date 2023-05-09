@@ -9,7 +9,7 @@ int main()
     {
         for (j = 1; j <= 9; j++)
         {
-            if ((6 - i <= j) && (j <= 4 + i))
+            if ((6-i <= j) && (j <= 4+i))
                 printf("*");
 
             else
