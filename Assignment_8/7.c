@@ -3,14 +3,16 @@
 
 int main()
 {
-    int i, j;
+    int i, j, rows;
 
-    for (i = 1; i <= 5; i++)
+    printf("Enter the number of rows\n");
+    scanf("%d", &rows);
+
+    for (i = 1; i <= rows; i++)
     {
-     
-        for (j = 1; j <= 10; j++)
+        for (j = 1; j <= 2 * rows; j++)
         {
-            if ((7-i <= j) && (j <= 4+i))
+            if ((rows + 2 - i <= j) && (j <= rows - 1 + i))
                 printf(" ");
 
             else
@@ -19,6 +21,5 @@ int main()
         printf("\n");
     }
 
-
-
-return 0;}
+    return 0;
+}

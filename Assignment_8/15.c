@@ -3,8 +3,7 @@
 
 int main()
 {
-   int i, j, rows;
-
+    int i, j, rows;
     printf("Enter the number of rows\n");
     scanf("%d", &rows);
 
@@ -12,7 +11,7 @@ int main()
     {
         for (j = 1; j <= rows; j++)
         {
-            if (i <= j)
+            if (j == rows || j == (rows + 1 - i) || i == rows)
                 printf("*");
 
             else

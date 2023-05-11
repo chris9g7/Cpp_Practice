@@ -9,7 +9,7 @@ int main()
     switch (x)
     {
     case 1:
-        printf("moody monday");
+        printf("massive monday");
         break;
     case 2:
         printf("top tuesday");

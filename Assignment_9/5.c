@@ -24,7 +24,7 @@ int main()
                 printf("best");
                 break;
             case 0:
-                printf("invalid");
+                printf("invalid input");
             }
         }
     }

@@ -3,13 +3,17 @@
 
 int main()
 {
-    int i, j ;
+    int i, j, rows, k = 0;
 
-    for (i = 1; i <= 5; i++)
+    printf("Enter the odd number of rows \n");
+    scanf("%d", &rows);
+
+    for (i = 1; i <= rows; i++)
     {
-        for (j = 1; j <= 5; j++)
+        i <= rows / 2 + 1 ? k++ : k--;
+        for (j = 1; j <= rows; j++)
         {
-            if (i <= j)
+            if (rows / 2 + 4 - k <= j && j <= rows / 2 + k)
                 printf("*");
 
             else
