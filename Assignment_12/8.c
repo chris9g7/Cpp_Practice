@@ -18,5 +18,6 @@ void binaryToD(int n)
     {
         binaryToD(n / 2);
         printf("%d", n % 2);
+        
     }
 }
