@@ -1,34 +1,49 @@
 #include <stdio.h>
-void mergeArray(int a[], int b[], int c[], int N);
+void mergeArray(int a[], int b[], int c[] );
 int main()
 {
 
-    int N, a[50], b[50], c[100];
-    printf("Enter the size of array a nd b\n");
-    scanf("%d", &N);
+    int n,m, a[50], b[50], c[100];
+    printf("Enter the size of  two array a nd b\n");
+    printf("Enter the size of a array\n");
+    scanf("%d", &n);
 
-    printf("Enter %d numbers in both array\n", N, N);
+    printf("Enter the size of b array\n");
+    scanf("%d", &m);
+
+    printf("Enter %d numbers in both array\n", n,m,);
+    for (int i = 0; i < n; i++)
+        scanf("%d", &a[i]);
+
+    printf("second\n");
     for (int i = 0; i < N; i++)
-        scanf("%d%d", &a[i], &b[i]);
+        scanf("%d", &b[i]);
 
-    // for (int i = 0; i < N; i++)
-    // {
-    //     printf(" a[%d] : %d\n", i, a[i]);
-
-    //     printf(" b[%d] : %d\n", i, b[i]);
-    // }
-    mergeArray(a, b, c, N * 2);
+    mergeArray(a, b, c);
     return 0;
 }
 
-void mergeArray(int a[], int b[], int c[], int N)
+void mergeArray(int a[], int b[], int c[] )
 {
     int i = 0, j = 0, k = 0;
 
-    for (k = 0; k < N ; k++)
+    for (k = 0; k < 10; k++)
     {
 
-        if (a[i] < b[j])
+        if (i >= 5)
+        {
+            while (k < 10)
+            {
+                c[k] = b[j];
+                j++;
+                if (k == 10)
+                {
+                    break;
+                }
+            }
+        }
+
+      else  if (a[i] < b[j])
         {
             c[k] = a[i];
             i++;
@@ -40,7 +55,7 @@ void mergeArray(int a[], int b[], int c[], int N)
         }
     }
 
-    for (k = 0; k < N ; k++)
+    for (k = 0; k < 10; k++)
     {
         printf(" %d", c[k]);
     }

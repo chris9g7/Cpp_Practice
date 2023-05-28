@@ -2,37 +2,37 @@
 
 int main()
 {
-    int a[3][3], b[3][3], c[3][3];
-
-    printf("Enter 9 elements of matrix\n");
-    for (int i = 0; i <= 2; i++)
-    {
-        for (int j = 0; j <= 2; j++)
-        {
-            scanf("%d", &a[i][j]);
-        }
-    }
-
+    int matrix[3][3], trans[3][3];
     printf("Enter 9 elements of matrix\n");
 
     for (int i = 0; i <= 2; i++)
     {
         for (int j = 0; j <= 2; j++)
         {
-            scanf("%d", &b[i][j]);
+            scanf("%d", &matrix[i][j]);
         }
     }
 
-    printf("Addition of two martix\n");
+    printf("Tranpose of 3x3 matrix\n");
+    
+
     for (int i = 0; i <= 2; i++)
     {
         for (int j = 0; j <= 2; j++)
         {
-            c[i][j] = a[i][j] + b[i][j];
-            printf(" %2d", c[i][j]);
+          trans[j][i] = matrix[i][j]; 
+        }
+    }
+
+    for (int i = 0; i <= 2; i++)
+    {
+        for (int j = 0; j <= 2; j++)
+        {
+            printf(" %d", trans[i][j]);
         }
         printf("\n");
     }
+
 
     return 0;
 }
