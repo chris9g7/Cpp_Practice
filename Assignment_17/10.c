@@ -2,7 +2,7 @@
 
 int main()
 {
-    char s[20], freq[150] = {0};
+    char s[20], freq[130] = {0};
     printf("Enter the string\n");
     fgets(s, sizeof s, stdin);
 
@@ -11,7 +11,7 @@ int main()
         freq[s[i]]++;
     }
 
-    for (int i = 0; i < 150; i++)
+    for (int i = 11; i < 130; i++) // i = 10 bcz fgets add (new line feed automatically and its ascii value is 10 )
     {
         if (freq[i] != 0)
         {
